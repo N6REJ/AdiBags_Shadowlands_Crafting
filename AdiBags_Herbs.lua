@@ -63,12 +63,7 @@ end
 local setFilter = AdiBags:RegisterFilter("Herbs", 100, "ABEvent-1.0")
 
 function setFilter:OnInitialize()
-	self.db = AdiBags.db:RegisterNamespace("Fishing Tools", {
-		profile = {
-			movehats = true,
-			movefishingETC = true,
-		}
-	})
+	self.db = AdiBags.db:RegisterNamespace("Herbs")
 end
 
 function setFilter:Update()
