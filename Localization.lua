@@ -1,5 +1,5 @@
--- AdiBags_fishing - Adds various lures,poles,hats and boots to filter out
--- Created by Frostanon character is Frost-Xavius please credit whenever.
+-- AdiBags_Herbs - Adds Herbs for shadowlands.
+-- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 
 local addonName, addon = ...
 
@@ -48,12 +48,7 @@ elseif locale == "esMX" then
 
 else
 -- enUS default
-N["Hats and Accessories."] = true
-N["Hats"] = true
-N["Show Hats in this group."] = true
-N["Accessories"] = true
-N["Show Accessories in this group."] = true
-N["Fishing Settings"] = true
+N["Herbs"] = true
 end
 
 -- values by their key
