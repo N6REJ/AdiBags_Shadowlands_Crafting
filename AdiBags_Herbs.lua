@@ -67,7 +67,7 @@ end
 function setFilter:Filter(slotData)
 	MatchIDs = MatchIDs or MatchIDs_Init(self)
 	if MatchIDs[slotData.itemId] then
-		return N["Fishing Tools"]
+		return N["Herbs"]
 	end
 
 	Tooltip = Tooltip or Tooltip_Init()
