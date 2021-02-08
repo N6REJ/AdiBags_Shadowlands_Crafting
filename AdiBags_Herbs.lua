@@ -102,23 +102,3 @@ function setFilter:Filter(slotData)
 
 	Tooltip:Hide()
 end
-
-function setFilter:GetOptions()
-	return {
-		movehats = {
-			name  = N["Hats"],
-			desc  = N["Show Hats in this group."],
-			type  = "toggle",
-			order = 20
-		},
-		movefishingETC = {
-			name  = N["Fishing Accessories"],
-			desc  = N["Show Fishing Accessories in this group."],
-			type  = "toggle",
-			order = 20
-		},
-	},
-	AdiBags:GetOptionHandler(self, false, function()
-		return self:Update()
-	end)
-end
