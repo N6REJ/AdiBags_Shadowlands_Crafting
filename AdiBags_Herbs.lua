@@ -16,27 +16,12 @@ local function AddToSet(Set, List)
 end
 
 local herbs = {
-	133755,		-- Underlight Angler - +60 fishskill and Teleport to pools
-	180136,		-- The Brokers Angle'r - +15 fishskill and increased chance to find bait while fishing in shadowlands
-	44050,		-- Mastercraft Kalu'ak Fishing Pole - +30 fishskill and Underwaterbreathing
-	25978,		-- Seth's Graphite Fishing Pole - +20 fishskill
-	19022,		-- Nat Pagle's Extreme Angler FC-5000 - +20 fishskill
-	6367,		-- Big Iron Fishing Pole - +20 fishskill
-	6366,		-- Darkwood Fishing Pole - +15 fishskill
-	120163,		-- Thruk's Fishing Rod - +3 fishskill
-	45858,		-- Nat's Lucky Fishing Pole - +25 fishskill
-	19970,		-- Arcanite Fishing Pole - +40 fishskill
-	84661,		-- Dragon Fishing Pole - +30 fishskill
-	45991,		-- Bone Fishing Pole - +30 fishskill
-	118381,		-- Ephemeral Fishing Pole - +100 fishskill
-	45992,		-- Jeweled Fishing Pole - +30 fishskill
-	46337,		-- Staats' Fishing Pole - +2 fishskill
-	12225,		-- Blump Family Fishing Pole - +3 fishskill
-	6365,		-- Strong Fishing Pole - +5 fishskill
-	116826,		-- Draenic Fishing Pole - +30 fishskill and Lure +200
-	84660,		-- Pandaren Fishing Pole - +10 fishskill
-	116825,		-- Savage Fishing Pole - +30 fishskill and Lure +200
-	6256,		-- Fishing Pole - Regular fishingpole
+	168583,		-- Widowbloom
+	168586,		-- Rising Glory
+	168589,		-- Marrow Root
+	169701,		-- Death Blossom
+	170554,		-- Vigils Torch
+	171315,		-- Nightshade
 }
 
 local function MatchIDs_Init(self)
