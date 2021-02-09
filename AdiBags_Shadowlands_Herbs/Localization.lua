@@ -1,5 +1,6 @@
--- AdiBags_Herbs - Adds Herbs for shadowlands.
+-- AdiBags_Shadowlands_Herbs - Adds Herbs for shadowlands.
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
+-- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
 
 local addonName, addon = ...
 
