@@ -17,7 +17,7 @@ local function AddToSet(Set, List)
 	end
 end
 
-local herbs = {
+local database = {
 	168583,		-- Widowbloom
 	168586,		-- Rising Glory
 	168589,		-- Marrow Root
@@ -29,7 +29,7 @@ local herbs = {
 local function MatchIDs_Init(self)
 	wipe(Result)
 
-	AddToSet(Result, herbs)
+	AddToSet(Result, database)
 
 	return Result
  end
