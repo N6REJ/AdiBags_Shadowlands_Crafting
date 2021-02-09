@@ -1,0 +1,8 @@
+## Interface: 90002
+## Title: AdiBags Shadowlands-Herbs
+## Version: 1.0.2
+## Author: BearLeeAble
+## DefaultState: enabled
+
+Localization.lua
+AdiBags_Shadowlands_Meat.lua
