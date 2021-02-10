@@ -1,6 +1,6 @@
 ## Interface: 90002
 ## Title: AdiBags Shadowlands-Fish
-## Version: 1.0.1
+## Version: 1.0.2
 ## Author: BearLeeAble
 ## DefaultState: enabled
 

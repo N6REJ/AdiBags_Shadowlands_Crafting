@@ -25,6 +25,7 @@ local database  = {
 	173035,	-- Pocked Bonefish
 	173036,	-- Spinefin Piranha
 	173037,	-- Elysian Thade
+	174327,	-- Malformed Gnasher
 }
 
 local function MatchIDs_Init(self)

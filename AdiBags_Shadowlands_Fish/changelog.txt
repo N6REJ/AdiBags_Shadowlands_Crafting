@@ -1,3 +1,6 @@
+1.0.2
+Added Malformed Gnasher
+
 1.0.1
 Change git repo & structure
 Rename addon to be able to be recognized as a "set"
