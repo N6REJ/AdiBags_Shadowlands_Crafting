@@ -1,0 +1,8 @@
+## Interface: 90002
+## Title: AdiBags Shadowlands-Mining
+## Version: 1.0.4
+## Author: BearLeeAble
+## DefaultState: enabled
+
+Localization.lua
+AdiBags_Shadowlands_Jewels.lua
