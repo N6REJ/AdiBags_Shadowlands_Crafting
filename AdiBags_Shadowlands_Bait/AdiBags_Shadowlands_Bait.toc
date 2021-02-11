@@ -1,8 +1,8 @@
 ## Interface: 90002
-## Title: AdiBags Shadowlands-Enchanting
+## Title: AdiBags Shadowlands-Bait
 ## Version: 1.1
 ## Author: BearLeeAble
 ## DefaultState: enabled
 
 Localization.lua
-AdiBags_Shadowlands_Enchanting.lua
+AdiBags_Shadowlands_Bait.lua
