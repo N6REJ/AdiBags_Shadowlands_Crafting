@@ -25,6 +25,7 @@ local database = {
 	172097,	-- Heavy Callous Hide
 	172438,	-- Enchanted Heavy Callous Hide
 	177279,	-- Gaunt Sinew
+	178787,	-- Orboreal Shard
 }
 
 local function MatchIDs_Init(self)
