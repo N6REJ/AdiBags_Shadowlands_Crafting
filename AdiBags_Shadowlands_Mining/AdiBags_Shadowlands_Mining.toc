@@ -1,6 +1,6 @@
 ## Interface: 90002
 ## Title: AdiBags Shadowlands-Mining
-## Version: 1.0.4
+## Version: 1.0.9
 ## Author: BearLeeAble
 ## DefaultState: enabled
 
