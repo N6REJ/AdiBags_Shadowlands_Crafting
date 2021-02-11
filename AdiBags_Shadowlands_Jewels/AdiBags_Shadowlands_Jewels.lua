@@ -18,8 +18,8 @@ local function AddToSet(Set, List)
 end
 
 local database = {
-	173109,	-- Angerseye
 	173108,	-- Oriblase
+	173109,	-- Angerseye
 	173110,	-- Umbryl
 	173170,	-- Essence of Rebirth
 	173171,	-- Essence of Torment

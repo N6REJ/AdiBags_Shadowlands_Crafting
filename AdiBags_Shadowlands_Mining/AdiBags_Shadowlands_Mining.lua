@@ -19,11 +19,11 @@ end
 
 local database = {
 	171828,	-- Laestrite Ore
-	171833,	-- Elethium Ore
-	171830,	-- Oxxein Ore
 	171829,	-- Solenium Ore
+	171830,	-- Oxxein Ore
 	171831,	-- Phaedrum Ore
 	171832,	-- Sinvyr Ore
+	171833,	-- Elethium Ore
 	171840,	-- Porous Stone
 	171841,	-- Shaded Stone
 	177061,	-- Twilight Bark
