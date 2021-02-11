@@ -9,7 +9,7 @@ local N = addon.N
 local MatchIDs
 local Tooltip
 local Result = {}
-local FilterName = "Skinning" -- Filter title to display in bag
+local FilterName = "Tailoring" -- Filter title to display in bag
 
 local function AddToSet(Set, List)
 	for _, v in ipairs(List) do
