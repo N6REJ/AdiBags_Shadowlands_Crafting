@@ -1,5 +1,5 @@
 ## Interface: 90002
-## Title: AdiBags Shadowlands-Mining
+## Title: AdiBags Shadowlands-Tailoring
 ## Version: 1.0.4
 ## Author: BearLeeAble
 ## DefaultState: enabled

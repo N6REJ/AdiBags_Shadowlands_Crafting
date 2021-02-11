@@ -1,8 +1,8 @@
 ## Interface: 90002
-## Title: AdiBags Shadowlands-Jewels
+## Title: AdiBags Shadowlands-Enchanting
 ## Version: 1.0.4
 ## Author: BearLeeAble
 ## DefaultState: enabled
 
 Localization.lua
-AdiBags_Shadowlands_Jewels.lua
+AdiBags_Shadowlands_Enchanting.lua
