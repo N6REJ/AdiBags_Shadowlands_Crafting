@@ -1,3 +1,6 @@
+1.0.7
+added tailoring
+
 1.0.6
 added orboreal shard
 
