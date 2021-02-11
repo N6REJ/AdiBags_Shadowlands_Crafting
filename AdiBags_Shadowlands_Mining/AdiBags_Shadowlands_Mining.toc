@@ -1,8 +1,8 @@
 ## Interface: 90002
-## Title: AdiBags Shadowlands-Meat
+## Title: AdiBags Shadowlands-Mining
 ## Version: 1.0.3
 ## Author: BearLeeAble
 ## DefaultState: enabled
 
 Localization.lua
-AdiBags_Shadowlands_Meat.lua
+AdiBags_Shadowlands_Mining.lua

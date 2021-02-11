@@ -1,6 +1,6 @@
 ## Interface: 90002
 ## Title: AdiBags Shadowlands-Herbs
-## Version: 1.0.2
+## Version: 1.0.3
 ## Author: BearLeeAble
 ## DefaultState: enabled
 
