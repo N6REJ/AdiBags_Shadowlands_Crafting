@@ -1,5 +1,8 @@
+1.0.3
+added mining
+
 1.0.2
-Added Malformed Gnasher
+Rename files to match set system
 
 1.0.1
 Change git repo & structure
