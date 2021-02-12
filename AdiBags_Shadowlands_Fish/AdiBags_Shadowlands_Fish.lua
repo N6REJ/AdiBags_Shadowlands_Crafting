@@ -9,7 +9,7 @@ local N = addon.N
 local MatchIDs
 local Tooltip
 local Result = {}
-local FilterName = "Fish" -- Filter title to display in bag
+local FilterTitle = "Fish" -- Filter title to display in bag
 
 local function AddToSet(Set, List)
 	for _, v in ipairs(List) do
@@ -49,10 +49,10 @@ local function Tooltip_Init()
 	return tip
 end
 
-local setFilter = AdiBags:RegisterFilter(FilterName, 100, "ABEvent-1.0")
+local setFilter = AdiBags:RegisterFilter(FilterTitle, 100, "ABEvent-1.0")
 
 function setFilter:OnInitialize()
-	self.db = AdiBags.db:RegisterNamespace(FilterName)
+	self.db = AdiBags.db:RegisterNamespace(FilterTitle)
 end
 
 function setFilter:Update()
@@ -71,7 +71,7 @@ end
 function setFilter:Filter(slotData)
 	MatchIDs = MatchIDs or MatchIDs_Init(self)
 	if MatchIDs[slotData.itemId] then
-		return N[FilterName]
+		return N[FilterTitle]
 	end
 
 	Tooltip = Tooltip or Tooltip_Init()
