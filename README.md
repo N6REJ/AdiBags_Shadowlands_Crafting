@@ -1,4 +1,4 @@
-# AdiBags - Shadowlands Crafting Crafting
+# AdiBags - Shadowlands Crafting
 Wow AdiBags - Shadowlands Crafting addons for AdiBags
 
 The purpose is to be a single category filter for AdiBags
