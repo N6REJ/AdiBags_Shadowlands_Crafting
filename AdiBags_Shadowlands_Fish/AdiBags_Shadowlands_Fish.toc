@@ -1,7 +1,7 @@
 ## Interface: 90002
-## Title: AdiBags Shadowlands-Fish
+## Title: AdiBags - Shadowlands Crafting-Fish
 ## Version: 1.1
-## Author: BearLeeAble
+## Author: Bearesquishy
 ## DefaultState: enabled
 
 Localization.lua

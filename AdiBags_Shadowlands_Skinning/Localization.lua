@@ -1,8 +1,8 @@
--- AdiBags_Shadowlands_Skinning - Adds drops from skinning for shadowlands.
+-- AdiBags_Shadowlands_Crafting - Skinning - Adds drops from skinning for shadowlands.
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 -- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
 
-local addonName, addon = ...
+local ADDON_NAME, addon = ...
 
 local N = setmetatable({}, {
 	__index = function(self, key)

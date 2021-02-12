@@ -1,8 +1,8 @@
--- AdiBags_Shadowlands_Jewels - Adds Jewels for shadowlands.
+-- AdiBags_Shadowlands_Crafting - Jewels - Adds Jewels for shadowlands.
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 -- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
 
-local addonName, addon = ...
+local ADDON_NAME, addon = ...
 
 local N = setmetatable({}, {
 	__index = function(self, key)

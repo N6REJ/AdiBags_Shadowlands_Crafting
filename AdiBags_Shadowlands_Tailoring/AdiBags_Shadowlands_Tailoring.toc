@@ -1,7 +1,7 @@
 ## Interface: 90002
-## Title: AdiBags Shadowlands-Tailoring
+## Title: AdiBags - Shadowlands Crafting-Tailoring
 ## Version: 1.1
-## Author: BearLeeAble
+## Author: Bearesquishy
 ## DefaultState: enabled
 
 Localization.lua
