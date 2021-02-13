@@ -8,47 +8,21 @@ local ADDON_NAME, addon = ...
 -- Get reference to AdiBags addon
 local AdiBags = LibStub("AceAddon-3.0"):GetAddon("AdiBags")
 
--- Get Version
+-- Addon info
+local FilterTitle = slc_tailoring.FilterTitle
+local database = slc_tailoring.database
 local version = GetAddOnMetadata(ADDON_NAME, "Version");
-local addoninfo = 'Version: ' .. version
+local addoninfo = 'Shadowlands Crafting - ' .. FilterTitle;
 
 local N = addon.N
 local MatchIDs
 local Tooltip
 local Result = {}
 
--- Versioning display info
-local addoninfo = 'AdiBags - Shadowlands Crafting - ' .. slc_tailoring.FilterTitle .. ' Version: ' .. version;
-
 -- Register this addon with AdiBags
 local setFilter = AdiBags:RegisterFilter(ADDON_NAME, 100, "ABEvent-1.0")
-
-local options = {
-	type = 'group',
-	name = '-= |cffFFFFFF Shadowlands Crafting - ' .. slc_tailoring.FilterTitle .. '|r =-',
-	inline = false,
-	childGroups = "tab",
-	args = {
-		versionPull = {
-			order = 1,
-			type = "description",
-			width = "normal",
-			name = addoninfo,
-		},
-		spacer2 = {
-			order = 2,
-			type = "description",
-			width = "normal",
-			name = "\n\n",
-		},
-		authorPull = {
-			order = 3,
-			type = "description",
-			width = "normal",
-			name = "Author: Bearesquishy",
-		}
-	}
-}
+setFilter.uiName = N[addoninfo]
+setFilter.uiDesc = N["Puts base " .. FilterTitle .. " crafting mats from drops or farming in their own group" .. "     Version: " .. version]
 
 -- ??
 local function AddToSet(Set, List)
@@ -60,7 +34,7 @@ end
 local function MatchIDs_Init(self)
 	wipe(Result)
 
-	AddToSet(Result, slc_tailoring.database)
+	AddToSet(Result, database)
 
 	return Result
 end
@@ -98,7 +72,7 @@ end
 function setFilter:Filter(slotData)
 	MatchIDs = MatchIDs or MatchIDs_Init(self)
 	if MatchIDs[slotData.itemId] then
-		return N[slc_tailoring.FilterTitle]
+		return FilterTitle
 	end
 
 	Tooltip = Tooltip or Tooltip_Init()
