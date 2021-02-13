@@ -1,4 +1,4 @@
--- AdiBags_Shadowlands_Crafting - Enchanting - Adds Enchanting for shadowlands.
+-- AdiBags_Shadowlands_Crafting
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 -- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
 
@@ -17,18 +17,15 @@ local MatchIDs
 local Tooltip
 local Result = {}
 
--- Label to use
-local FilterTitle = "Enchanting"
-
 -- Versioning display info
-local addoninfo = 'AdiBags - Shadowlands Crafting - ' .. FilterTitle .. ' Version: ' .. version;
+local addoninfo = 'AdiBags - Shadowlands Crafting - ' .. slc_tailoring.FilterTitle .. ' Version: ' .. version;
 
 -- Register this addon with AdiBags
 local setFilter = AdiBags:RegisterFilter(ADDON_NAME, 100, "ABEvent-1.0")
 
 local options = {
 	type = 'group',
-	name = '-= |cffFFFFFF Shadowlands Crafting - ' .. FilterTitle .. '|r =-',
+	name = '-= |cffFFFFFF Shadowlands Crafting - ' .. slc_tailoring.FilterTitle .. '|r =-',
 	inline = false,
 	childGroups = "tab",
 	args = {
@@ -60,18 +57,10 @@ local function AddToSet(Set, List)
 	end
 end
 
-local database = {
-	172230,	-- Soul Dust
-	172231,	-- Sacred Shard
-	172232,	-- Eternal Crystal
-	172439,	-- Enchanted Lightless Silk
-	183951,	-- Immortal Shard
-}
-
 local function MatchIDs_Init(self)
 	wipe(Result)
 
-	AddToSet(Result, database)
+	AddToSet(Result, slc_tailoring.database)
 
 	return Result
 end
@@ -109,7 +98,7 @@ end
 function setFilter:Filter(slotData)
 	MatchIDs = MatchIDs or MatchIDs_Init(self)
 	if MatchIDs[slotData.itemId] then
-		return N[FilterTitle]
+		return N[slc_tailoring.FilterTitle]
 	end
 
 	Tooltip = Tooltip or Tooltip_Init()

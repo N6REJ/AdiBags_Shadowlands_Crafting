@@ -1,4 +1,4 @@
--- AdiBags_Shadowlands_Crafting - Fish - Adds fish for shadowlands.
+-- AdiBags_Shadowlands_Crafting
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 -- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
 
@@ -17,18 +17,15 @@ local MatchIDs
 local Tooltip
 local Result = {}
 
--- Label to use
-local FilterTitle = "Fish"
-
 -- Versioning display info
-local addoninfo = 'AdiBags - Shadowlands Crafting - ' .. FilterTitle .. ' Version: ' .. version;
+local addoninfo = 'AdiBags - Shadowlands Crafting - ' .. slc.ADDON_NAME.FilterTitle .. ' Version: ' .. version;
 
 -- Register this addon with AdiBags
 local setFilter = AdiBags:RegisterFilter(ADDON_NAME, 100, "ABEvent-1.0")
 
 local options = {
 	type = 'group',
-	name = '-= |cffFFFFFF Shadowlands Crafting - ' .. FilterTitle .. '|r =-',
+	name = '-= |cffFFFFFF Shadowlands Crafting - ' .. slc_mining.FilterTitle .. '|r =-',
 	inline = false,
 	childGroups = "tab",
 	args = {
@@ -60,21 +57,10 @@ local function AddToSet(Set, List)
 	end
 end
 
-local database  = {
-	-- ID,	--Item name
-	173032,	-- Lost Sole
-	173033,	-- Iridescent Amberjack
-	173034,	-- Silvergill Pike
-	173035,	-- Pocked Bonefish
-	173036,	-- Spinefin Piranha
-	173037,	-- Elysian Thade
-	174327,	-- Malformed Gnasher
-}
-
 local function MatchIDs_Init(self)
 	wipe(Result)
 
-	AddToSet(Result, database)
+	AddToSet(Result, slc_mining.database)
 
 	return Result
 end
@@ -112,7 +98,7 @@ end
 function setFilter:Filter(slotData)
 	MatchIDs = MatchIDs or MatchIDs_Init(self)
 	if MatchIDs[slotData.itemId] then
-		return N[FilterTitle]
+		return N[slc_mining.FilterTitle]
 	end
 
 	Tooltip = Tooltip or Tooltip_Init()
