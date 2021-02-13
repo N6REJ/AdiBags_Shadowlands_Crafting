@@ -1,4 +1,4 @@
--- AdiBags_Shadowlands_Crafting - Skinning - Adds skinning for shadowlands.
+-- AdiBags_Shadowlands_Crafting
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 -- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
 
@@ -17,18 +17,15 @@ local MatchIDs
 local Tooltip
 local Result = {}
 
--- Label to use
-local FilterTitle = "Skinning"
-
 -- Versioning display info
-local addoninfo = 'AdiBags - Shadowlands Crafting - ' .. FilterTitle .. ' Version: ' .. version;
+local addoninfo = 'AdiBags - Shadowlands Crafting - ' .. slc.ADDON_NAME.FilterTitle .. ' Version: ' .. version;
 
 -- Register this addon with AdiBags
 local setFilter = AdiBags:RegisterFilter(ADDON_NAME, 100, "ABEvent-1.0")
 
 local options = {
 	type = 'group',
-	name = '-= |cffFFFFFF Shadowlands Crafting - ' .. FilterTitle .. '|r =-',
+	name = '-= |cffFFFFFF Shadowlands Crafting - ' .. slc_mining.FilterTitle .. '|r =-',
 	inline = false,
 	childGroups = "tab",
 	args = {
@@ -60,22 +57,10 @@ local function AddToSet(Set, List)
 	end
 end
 
-
-local database = {
-	172089,	-- Desolate Leather
-	172092,	-- Pallid Bone
-	172094,	-- Callous Hide
-	172096,	-- Heavy Desolate Leather
-	172097,	-- Heavy Callous Hide
-	172438,	-- Enchanted Heavy Callous Hide
-	177279,	-- Gaunt Sinew
-	178787,	-- Orboreal Shard
-}
-
 local function MatchIDs_Init(self)
 	wipe(Result)
 
-	AddToSet(Result, database)
+	AddToSet(Result, slc_mining.database)
 
 	return Result
 end
@@ -113,7 +98,7 @@ end
 function setFilter:Filter(slotData)
 	MatchIDs = MatchIDs or MatchIDs_Init(self)
 	if MatchIDs[slotData.itemId] then
-		return N[FilterTitle]
+		return N[slc_mining.FilterTitle]
 	end
 
 	Tooltip = Tooltip or Tooltip_Init()

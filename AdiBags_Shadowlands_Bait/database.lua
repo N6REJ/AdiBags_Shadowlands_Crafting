@@ -5,13 +5,13 @@
 local ADDON_NAME, addon = ...
 
 -- Create addon table
-SLC = {}
+slc_bait = {}
 
 -- Label to use
-SLC.FilterTitle = "Bait"
+slc_bait.FilterTitle = "Bait"
 
 -- Database of items
-SLC.database  = {
+slc_bait.database  = {
     -- ID,	--Item name
     173038,	-- Lose Sole bait
     173039,	-- Iridescent amberjack bait

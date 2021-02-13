@@ -2,6 +2,7 @@
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 -- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
 
+
 local ADDON_NAME, addon = ...
 
 -- Get reference to AdiBags addon
@@ -17,14 +18,14 @@ local Tooltip
 local Result = {}
 
 -- Versioning display info
-local addoninfo = 'AdiBags - Shadowlands Crafting - ' .. slc_bait.FilterTitle .. ' Version: ' .. version;
+local addoninfo = 'AdiBags - Shadowlands Crafting - ' .. slc_enchanting.FilterTitle .. ' Version: ' .. version;
 
 -- Register this addon with AdiBags
 local setFilter = AdiBags:RegisterFilter(ADDON_NAME, 100, "ABEvent-1.0")
 
 local options = {
 	type = 'group',
-	name = '-= |cffFFFFFF Shadowlands Crafting - ' .. slc_bait.FilterTitle .. '|r =-',
+	name = '-= |cffFFFFFF Shadowlands Crafting - ' .. slc_enchanting.FilterTitle .. '|r =-',
 	inline = false,
 	childGroups = "tab",
 	args = {
@@ -59,7 +60,7 @@ end
 local function MatchIDs_Init(self)
 	wipe(Result)
 
-	AddToSet(Result, slc_bait.database)
+	AddToSet(Result, slc_enchanting.database)
 
 	return Result
 end
@@ -97,7 +98,7 @@ end
 function setFilter:Filter(slotData)
 	MatchIDs = MatchIDs or MatchIDs_Init(self)
 	if MatchIDs[slotData.itemId] then
-		return N[slc_bait.FilterTitle]
+		return N[slc_enchanting.FilterTitle]
 	end
 
 	Tooltip = Tooltip or Tooltip_Init()

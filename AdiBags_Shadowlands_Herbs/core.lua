@@ -1,4 +1,4 @@
--- AdiBags_Shadowlands_Crafting - Herbs - Adds Herbs for shadowlands.
+-- AdiBags_Shadowlands_Crafting
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 -- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
 
@@ -17,18 +17,15 @@ local MatchIDs
 local Tooltip
 local Result = {}
 
--- Label to use
-local FilterTitle = "Herbs"
-
 -- Versioning display info
-local addoninfo = 'AdiBags - Shadowlands Crafting - ' .. FilterTitle .. ' Version: ' .. version;
+local addoninfo = 'AdiBags - Shadowlands Crafting - ' .. slc_herbs.FilterTitle .. ' Version: ' .. version;
 
 -- Register this addon with AdiBags
 local setFilter = AdiBags:RegisterFilter(ADDON_NAME, 100, "ABEvent-1.0")
 
 local options = {
 	type = 'group',
-	name = '-= |cffFFFFFF Shadowlands Crafting - ' .. FilterTitle .. '|r =-',
+	name = '-= |cffFFFFFF Shadowlands Crafting - ' .. slc_herbs.FilterTitle .. '|r =-',
 	inline = false,
 	childGroups = "tab",
 	args = {
@@ -60,20 +57,10 @@ local function AddToSet(Set, List)
 	end
 end
 
-
-local database = {
-	168583,		-- Widowbloom
-	168586,		-- Rising Glory
-	168589,		-- Marrow Root
-	169701,		-- Death Blossom
-	170554,		-- Vigils Torch
-	171315,		-- Nightshade
-}
-
 local function MatchIDs_Init(self)
 	wipe(Result)
 
-	AddToSet(Result, database)
+	AddToSet(Result, slc_herbs.database)
 
 	return Result
 end
@@ -111,7 +98,7 @@ end
 function setFilter:Filter(slotData)
 	MatchIDs = MatchIDs or MatchIDs_Init(self)
 	if MatchIDs[slotData.itemId] then
-		return N[FilterTitle]
+		return N[slc_herbs.FilterTitle]
 	end
 
 	Tooltip = Tooltip or Tooltip_Init()

@@ -5,4 +5,5 @@
 ## DefaultState: enabled
 
 Localization.lua
-AdiBags_Shadowlands_Tailoring.lua
+database.lua
+core.lua

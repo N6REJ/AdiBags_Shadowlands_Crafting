@@ -5,4 +5,5 @@
 ## DefaultState: enabled
 
 Localization.lua
-AdiBags_Shadowlands_Mining.lua
+database.lua
+core.lua
