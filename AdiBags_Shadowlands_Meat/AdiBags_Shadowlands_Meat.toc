@@ -3,6 +3,7 @@
 ## Version: 1.1
 ## Author: Bearesquishy
 ## DefaultState: enabled
+## Dependancies: AdiBags
 
 Localization.lua
 database.lua
