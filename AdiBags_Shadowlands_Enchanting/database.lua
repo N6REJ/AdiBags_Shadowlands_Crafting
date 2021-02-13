@@ -2,16 +2,17 @@
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 -- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
 --
-local ADDON_NAME, addon = ...
+local ADDON_NAME, ADDON_TABLE, addon = ...
 
 -- Create addon table
-slc_enchanting = {}
+N = { }
+ADDON_TABLE.N = N
 
 -- Label to use
-slc_enchanting.FilterTitle = "Enchanting"
+N["FilterTitle"] = "Enchanting"
 
 -- Database of items
-slc_enchanting.database = {
+N["database"] = {
 	172230,	-- Soul Dust
 	172231,	-- Sacred Shard
 	172232,	-- Eternal Crystal

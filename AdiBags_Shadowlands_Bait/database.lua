@@ -2,16 +2,17 @@
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 -- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
 --
-local ADDON_NAME, addon = ...
+local ADDON_NAME, ADDON_TABLE, addon = ...
 
 -- Create addon table
-slc_bait = {}
+N = { }
+ADDON_TABLE.N = N
 
 -- Label to use
-slc_bait.FilterTitle = "Bait"
+N["FilterTitle"] = "Bait"
 
 -- Database of items
-slc_bait.database  = {
+N["database"] = {
     -- ID,	--Item name
     173038,	-- Lose Sole bait
     173039,	-- Iridescent amberjack bait

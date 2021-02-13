@@ -2,15 +2,17 @@
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 -- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
 --
-local ADDON_NAME, addon = ...
+local ADDON_NAME, ADDON_TABLE, addon = ...
 
 -- Create addon table
-slc_mining = { }
+N = { }
+ADDON_TABLE.N = N
 
 -- Label to use
-slc_mining.FilterTitle = "Mining"
+N["FilterTitle"] = "Mining"
 
-slc_mining.database = {
+-- Database of items
+N["database"] = {
 	171828,	-- Laestrite Ore
 	171829,	-- Solenium Ore
 	171830,	-- Oxxein Ore

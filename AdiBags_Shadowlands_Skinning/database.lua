@@ -2,16 +2,17 @@
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 -- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
 --
-local ADDON_NAME, addon = ...
+local ADDON_NAME, ADDON_TABLE, addon = ...
 
 -- Create addon table
-slc_skinning = { }
+N = { }
+ADDON_TABLE.N = N
 
 -- Label to use
-slc_skinning.FilterTitle = "Skinning"
+N["FilterTitle"] = "Skinning"
 
 -- Database of items
-slc_skinning.database = {
+N["database"] = {
 	172089,	-- Desolate Leather
 	172092,	-- Pallid Bone
 	172094,	-- Callous Hide

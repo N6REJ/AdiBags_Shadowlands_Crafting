@@ -2,16 +2,17 @@
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 -- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
 --
-local ADDON_NAME, addon = ...
+local ADDON_NAME, ADDON_TABLE, addon = ...
 
 -- Create addon table
-slc_meat = {}
+N = { }
+ADDON_TABLE.N = N
 
 -- Label to use
-slc_meat.FilterTitle = "Meat"
+N["FilterTitle"] = "Meat"
 
 -- Database of items
-slc_meat.database = {
+N["database"] = {
 	172052,	-- Aethereal Meat
 	172053,	-- Tenebrous Ribs
 	172054,	-- Raw Seraphic Wing
