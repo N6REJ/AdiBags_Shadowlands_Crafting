@@ -1,6 +1,7 @@
--- AdiBags_Shadowlands_Crafting - Fish - Adds fish for shadowlands.
+-- AdiBags_Shadowlands_Crafting
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 -- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
+
 
 local ADDON_NAME, addon = ...
 
@@ -16,18 +17,18 @@ local MatchIDs
 local Tooltip
 local Result = {}
 
--- Label to use
-local FilterTitle = "Bait"
+-- We need to localize the database variables for some reason
+--local FilterTitle = SLC.FilterTitle
 
 -- Versioning display info
-local addoninfo = 'AdiBags - Shadowlands Crafting - ' .. FilterTitle .. ' Version: ' .. version;
+local addoninfo = 'AdiBags - Shadowlands Crafting - ' .. SLC.FilterTitle .. ' Version: ' .. version;
 
 -- Register this addon with AdiBags
 local setFilter = AdiBags:RegisterFilter(ADDON_NAME, 100, "ABEvent-1.0")
 
 local options = {
 	type = 'group',
-	name = '-= |cffFFFFFF Shadowlands Crafting - ' .. FilterTitle .. '|r =-',
+	name = '-= |cffFFFFFF Shadowlands Crafting - ' .. SLC.FilterTitle .. '|r =-',
 	inline = false,
 	childGroups = "tab",
 	args = {
@@ -59,24 +60,13 @@ local function AddToSet(Set, List)
 	end
 end
 
-local database  = {
-	-- ID,	--Item name
-	173038,	-- Lose Sole bait
-	173039,	-- Iridescent amberjack bait
-	173040,	-- Silvergill pike bait
-	173041,	-- Pocked Bonefish bait
-	173042,	-- Spinefin piranha bait
-	173043,	-- Elysian thade bait
-
-}
-
 local function MatchIDs_Init(self)
 	wipe(Result)
 
-	AddToSet(Result, database)
+	AddToSet(Result, SLC.database)
 
 	return Result
- end
+end
 
 local function Tooltip_Init()
 	local tip, leftside = CreateFrame("GameTooltip"), {}
@@ -111,7 +101,7 @@ end
 function setFilter:Filter(slotData)
 	MatchIDs = MatchIDs or MatchIDs_Init(self)
 	if MatchIDs[slotData.itemId] then
-		return N[FilterTitle]
+		return N[SLC.FilterTitle]
 	end
 
 	Tooltip = Tooltip or Tooltip_Init()

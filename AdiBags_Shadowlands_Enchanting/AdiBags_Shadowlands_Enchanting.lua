@@ -1,4 +1,4 @@
--- AdiBags_Shadowlands_Crafting - Tailoring - Adds Tailoring for shadowlands.
+-- AdiBags_Shadowlands_Crafting - Enchanting - Adds Enchanting for shadowlands.
 -- Created by N6REJ character is Bearesquishy - dalaran please credit whenever.
 -- Source on GitHub: https://github.com/N6REJ/AdiBags_Shadowlands_Crafting
 

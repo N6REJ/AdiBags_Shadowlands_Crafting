@@ -5,4 +5,5 @@
 ## DefaultState: enabled
 
 Localization.lua
-AdiBags_Shadowlands_Bait.lua
+database.lua
+core.lua
