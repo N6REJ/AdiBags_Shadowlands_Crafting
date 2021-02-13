@@ -1,3 +1,7 @@
+1.2
+Now uses universal core file.
+READY FOR RELEASE
+
 1.1
 Converted to core/database file pairing
 Everything working well.
