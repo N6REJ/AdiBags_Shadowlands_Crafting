@@ -18,4 +18,5 @@ N["database"] = {
 	172232,	-- Eternal Crystal
 	172439,	-- Enchanted Lightless Silk
 	183951,	-- Immortal Shard
+	38682,	-- Enchanting Vellum
 }
