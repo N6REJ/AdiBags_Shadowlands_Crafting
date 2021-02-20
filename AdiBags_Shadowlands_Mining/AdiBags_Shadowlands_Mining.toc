@@ -5,6 +5,5 @@
 ## DefaultState: enabled
 ## Dependancies: AdiBags
 
-Localization.lua
 database.lua
 core.lua
