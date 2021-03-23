@@ -38,7 +38,7 @@ local function MatchIDs_Init(self)
 
 	return Result
 end
-
+--[[
 -- Meat
 local function MatchIDs_Init_Meat(self)
 	wipe(Result)
@@ -55,7 +55,7 @@ local function MatchIDs_Init_Fish(self)
 
 	return Result
 end
-
+--]]
 
 local function Tooltip_Init()
 	local tip, leftside = CreateFrame("GameTooltip"), {}
@@ -92,7 +92,7 @@ function setFilter:Filter(slotData)
 	if MatchIDs[slotData.itemId] then
 		return N["FilterTitle"]
 	end
-
+--[[
 	-- MEAT
 	MatchIDs = MatchIDs or MatchIDs_Init_Meat(self)
 	if MatchIDs[slotData.itemId] then
@@ -104,7 +104,7 @@ function setFilter:Filter(slotData)
 	if MatchIDs[slotData.itemId] then
 		return F["FilterTitle"]
 	end
-
+--]]
 	Tooltip = Tooltip or Tooltip_Init()
 	Tooltip:SetOwner(UIParent,"ANCHOR_NONE")
 	Tooltip:ClearLines()
