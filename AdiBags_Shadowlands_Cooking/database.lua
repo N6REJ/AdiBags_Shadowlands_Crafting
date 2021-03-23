@@ -13,10 +13,9 @@ N["FilterTitle"] = "Cooking"
 
 -- Database of items
 N["database"] = {
-	172052,	-- Aethereal Meat
-	172053,	-- Tenebrous Ribs
-	172054,	-- Raw Seraphic Wing
-	172055,	-- Phantasmal Haunch
-	179314,	-- Creeping Crawler Meat
-	179315,	-- Shadowy Shank
+	172056, -- Medley of Transplanar Spices
+	172057,	-- Inconceivably Aged Vinegar
+	172058, -- Smuggled Azerothian Produce
+	172059, -- Rich Grazer Milk
+	178786,	-- Lusterwheat Flour
 }
