@@ -1,6 +1,6 @@
 ## Interface: 90002
 ## Title: AdiBags - Shadowlands Crafting-Skinning
-## Version: 1.2
+## Version: 1.4
 ## Author: Bearesquishy
 ## DefaultState: enabled
 ## Dependancies: AdiBags
