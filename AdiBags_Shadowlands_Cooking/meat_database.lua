@@ -6,7 +6,7 @@ local ADDON_NAME, ADDON_TABLE, addon = ...
 
 -- Create addon table
 M = { }
-ADDOM_TABLE.M = M
+ADDON_TABLE.M = M
 
 -- Label to use
 M["FilterTitle"] = "Meat"

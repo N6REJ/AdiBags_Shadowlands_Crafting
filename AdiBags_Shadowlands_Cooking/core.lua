@@ -24,7 +24,7 @@ local setFilter = AdiBags:RegisterFilter(ADDON_NAME, 100, "ABEvent-1.0")
 setFilter.uiName = addoninfo
 setFilter.uiDesc = "Puts base " .. N["FilterTitle"] .. " crafting mats from drops or farming in their own group" .. "     Version: " .. version
 
--- ??
+
 local function AddToSet(Set, List)
 	for _, v in ipairs(List) do
 		Set[v] = true
@@ -38,7 +38,7 @@ local function MatchIDs_Init(self)
 
 	return Result
 end
---[[
+
 -- Meat
 local function MatchIDs_Init_Meat(self)
 	wipe(Result)
@@ -92,7 +92,7 @@ function setFilter:Filter(slotData)
 	if MatchIDs[slotData.itemId] then
 		return N["FilterTitle"]
 	end
---[[
+
 	-- MEAT
 	MatchIDs = MatchIDs or MatchIDs_Init_Meat(self)
 	if MatchIDs[slotData.itemId] then
@@ -104,7 +104,7 @@ function setFilter:Filter(slotData)
 	if MatchIDs[slotData.itemId] then
 		return F["FilterTitle"]
 	end
---]]
+
 	Tooltip = Tooltip or Tooltip_Init()
 	Tooltip:SetOwner(UIParent,"ANCHOR_NONE")
 	Tooltip:ClearLines()
