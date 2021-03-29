@@ -5,7 +5,5 @@
 ## DefaultState: enabled
 ## Dependancies: AdiBags
 
-meat_database.lua
-fish_database.lua
 database.lua
 core.lua

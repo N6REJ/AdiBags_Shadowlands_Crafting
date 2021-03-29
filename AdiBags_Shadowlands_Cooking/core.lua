@@ -13,8 +13,6 @@ local version = GetAddOnMetadata(ADDON_NAME, "Version");
 local addoninfo = 'Shadowlands Crafting - ' .. N["FilterTitle"];
 
 local N = ADDON_TABLE.N
-local F = ADDON_TABLE.F
-local M = ADDON_TABLE.M
 local MatchIDs
 local Tooltip
 local Result = {}
@@ -38,24 +36,6 @@ local function MatchIDs_Init(self)
 
 	return Result
 end
-
--- Meat
-local function MatchIDs_Init_Meat(self)
-	wipe(Result)
-
-	AddToSet(Result, M["database"])
-
-	return Result
-end
-
-local function MatchIDs_Init_Fish(self)
-	wipe(Result)
-
-	AddToSet(Result, F["database"])
-
-	return Result
-end
---]]
 
 local function Tooltip_Init()
 	local tip, leftside = CreateFrame("GameTooltip"), {}
@@ -91,18 +71,6 @@ function setFilter:Filter(slotData)
 	MatchIDs = MatchIDs or MatchIDs_Init(self)
 	if MatchIDs[slotData.itemId] then
 		return N["FilterTitle"]
-	end
-
-	-- MEAT
-	MatchIDs = MatchIDs or MatchIDs_Init_Meat(self)
-	if MatchIDs[slotData.itemId] then
-		return M["FilterTitle"]
-	end
-
-	-- FISH
-	MatchIDs = MatchIDs or MatchIDs_Init_Fish(self)
-	if MatchIDs[slotData.itemId] then
-		return F["FilterTitle"]
 	end
 
 	Tooltip = Tooltip or Tooltip_Init()
